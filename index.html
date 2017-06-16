@@ -1,0 +1,364 @@
+<!--Date: Jun 14 2017-->
+
+<!doctype html>
+<html>
+
+<head>
+    <title>
+        Dashboard
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-default" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+                <a class="navbar-brand" href="#">ArtHome</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Link</a></li>
+                </ul>
+                <div class="nav navbar-nav navbar-right">
+                    <form class="navbar-form" role="search">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search" name="q">
+                            <div class="input-group-btn">
+                                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+
+        <section>
+            <div class="row media-types">
+                <div class="col-xs-3">
+                    <a data-toggle="tab" href="#images"><img src="images/image1.png"></a>
+                </div>
+                <div class="col-xs-3">
+                    <a data-toggle="tab" href="#audio"><img src="images/audio.ico"></a>
+                </div>
+                <div class="col-xs-3">
+                    <a data-toggle="tab" href="#video"><img src="images/video.png"></a>
+                </div>
+                <div class="col-xs-3">
+                    <a data-toggle="tab" href="#notes"><img src="images/document.png"></a>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <div class="row">
+            <div class="col-sm-10">
+                <div class="tab-content">
+                    <div id="images" class="tab-pane fade in active">
+                        <div class="row description">Images</div>
+                        <div class="col-md-12 mediaview">
+                            <img src="images/audio.ico" width="200px;">
+                        </div>
+                        <div class="col-md-12 description">
+                            **My Snaps **
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-md-12 slider">
+                                <!--<ul class="inline-view">
+                                    <li><button id="prev" class="btn btn-info">prev</button></li>
+                                    <li><img src="images/image1.png"></li>
+                                    <li><img src="images/image1.png"></li>
+                                    <li><img src="images/image1.png"></li>
+                                    <li><img src="images/image1.png"></li>
+                                    <li><button id="next" class="btn btn-info">next</button></li>
+                                </ul>-->
+                                <div class="carousel slide media-carousel" id="media">
+                                    <div class="carousel-inner">
+                                        <div class="item  active">
+                                            <div class="row">
+                                                <div class="col-xs-4">
+                                                    <a class="thumbnail" href="#"><img alt="" src="images/image1.png"></a>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <a class="thumbnail" href="#"><img alt="" src="images/image1.png"></a>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <a class="thumbnail" href="#"><img alt="" src="images/image1.png"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="row">
+                                                <div class="col-xs-4">
+                                                    <a class="thumbnail" href="#"><img alt="" src="images/image1.png"></a>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="row">
+                                                <div class="col-xs-4">
+                                                    <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a data-slide="prev" href="#media" class="left carousel-control">‹</a>
+                                    <a data-slide="next" href="#media" class="right carousel-control">›</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--video-dashboard-->
+                    <div id="video" class="tab-pane fade">
+                        <div class="row description">video</div>
+                        <div class="col-md-12 mediaview">
+                            <video controls>
+                                    <source src="/media/My%20First%20Line%20of%20Code-%20Linus%20Torvalds.mp4">
+                                </video>
+                        </div>
+                        <div class="col-md-12 description">
+                            **My Video Art**
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-md-12 slider">
+                                <ul class="inline-view">
+                                    <li><button id="prev" class="btn btn-info">prev</button></li>
+                                    <li><img src="images/video.png"></li>
+                                    <li><img src="images/video.png"></li>
+                                    <li><img src="images/video.png"></li>
+                                    <li><img src="images/video.png"></li>
+                                    <li><button id="next" class="btn btn-info">next</button></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--audio-dashboard-->
+                    <div id="audio" class="tab-pane fade">
+                        <div class="row description">Audio</div>
+                        <div class="col-md-12 mediaview">
+                            <img src="images/audio.ico" width="200px;"><br>
+                            <audio controls>
+                                    <source src="/media/minions_happy_birthd.mp3" type="audio/mp3">
+                                </audio>
+                        </div>
+                        <div class="col-md-12 description">
+                            My Recordings
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-12 slider">
+                                <!--<ul class="inline-view">
+                                    <li><button id="prev" class="btn btn-info">prev</button></li>
+                                    <li><img src="images/audio.ico"></li>
+                                    <li><img src="images/audio.ico"></li>
+                                    <li><img src="images/audio.ico"></li>
+                                    <li><img src="images/audio.ico"></li>
+                                    <li><button id="next" class="btn btn-info">next</button></li>
+                                </ul>-->
+
+                                <div class="carousel slide media-carousel" id="media">
+                                    <div class="carousel-inner">
+                                        <div class="item  active">
+                                            <div class="row">
+                                                <div class="col-xs-4">
+                                                    <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="row">
+                                                <div class="col-xs-4">
+                                                    <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="row">
+                                                <div class="col-xs-4">
+                                                    <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a data-slide="prev" href="#media" class="left carousel-control">‹</a>
+                                    <a data-slide="next" href="#media" class="right carousel-control">›</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--audio-dashboard-->
+                    <div id="notes" class="tab-pane fade">
+                        <div class="row description">Notes</div>
+                        <div class="col-md-12 mediaview">
+                            <div class="notearea">
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+                            </div>
+                        </div>
+                        <div class="col-md-12 description">
+                            My Notes
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-md-12 slider">
+                                <ul class="inline-view">
+                                    <li><button id="prev" class="btn btn-info">prev</button></li>
+                                    <li><img src="images/document.png"></li>
+                                    <li><img src="images/document.png"></li>
+                                    <li><img src="images/document.png"></li>
+                                    <li><img src="images/document.png"></li>
+                                    <li><button id="next" class="btn btn-info">next</button></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <center>
+                    <h3>Options:</h3>
+                    <div class="col-md-12">
+                    </div>
+                    <button type="button" class="btn btn-info btn-circle" data-toggle="modal" data-target="#AddMedia"><i class="glyphicon glyphicon-plus"></i></button>
+                    <button type="button" class="btn btn-info btn-circle"><i class="glyphicon glyphicon-remove"></i></button>
+                    <button type="button" class="btn btn-info btn-circle"><i class="glyphicon glyphicon-eye-open"></i>
+                </button>
+                    <button type="button" class="btn btn-info btn-circle">
+              <i class="glyphicon glyphicon-download-alt"></i>
+                </button>
+                </center>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <hr>
+                <div class="col-lg-12">
+                    <div class="col-md-8">
+                        <a href="#">Terms of Service</a> | <a href="#">Privacy</a>
+                        <a href="home.html">home</a>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="muted pull-right">© 2017 Company.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal fade" id="AddMedia" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Add New:</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="">
+                        <div class="form-group">
+                            <label for="desc">Type</label>
+                            <select name="type" id="type" class="form-control">
+                                <option value="image">image</option>
+                                <option value="video">video</option>
+                                <option value="audio">audio</option>
+                                <option value="text">text</option>
+                            </select>
+                        </div>
+                        <div class="form-group textarea" style="display:none">
+                            <label for="desc">Notes:</label>
+                            <textarea placeholder="Please Type Here..." class="form-control" name="notes"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="desc">Description</label>
+                            <input type="text" name="desc" id="desc" placeholder="Description" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="desc">Source:</label>
+                            <input type="radio" name="videotype" class="videotype" value="local"> Upload file
+                            <input type="radio" name="videotype" class="videotype" value="url"> YouTube Link
+                        </div>
+                        <div class="form-group upload" style="display:none">
+                            <label for="desc">Upload File</label>
+                            <input type="file" name="desc" id="desc" placeholder="file" class="form-control">
+                        </div>
+                        <div class="form-group youtube" style="display:none">
+                            <label for="videourl">Enter URL:</label>
+                            <input type="text" name="videourl" id="videourl" placeholder="URL:" class="form-control">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--    <script src="scripts/jquery.min.js"></script>-->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!--    <script src="scripts/bootstrap.min.js"></script>-->
+    <script src="scripts/custom.js"></script>
+</body>
+
+</html>
